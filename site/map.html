@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Map · Your Name</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="site-header-inner">
+      <p class="site-title"><a href="index.html">Your Name</a></p>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="map.html" aria-current="page">Map</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <h1>Map</h1>
+    <p class="lede">A map of places I've been / recommend / etc.</p>
+
+    <!--
+      HOW TO ADD YOUR GOOGLE MY MAPS EMBED:
+      1. Open your map at mymaps.google.com
+      2. Click the 3-dot menu → "Embed on my site"
+      3. Copy the <iframe ...> code it gives you
+      4. Delete the <div class="map-placeholder">...</div> block below
+      5. Paste your <iframe> in its place, inside <div class="map-embed"> ... </div>
+    -->
+    <div class="map-embed">
+      <div class="map-placeholder">
+        Your Google My Maps embed will go here.<br>
+        See the comment in map.html for how to add it.
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      &copy; <span id="year"></span> Your Name
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

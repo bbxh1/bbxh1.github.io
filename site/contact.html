@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact · Your Name</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="site-header-inner">
+      <p class="site-title"><a href="index.html">Your Name</a></p>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="map.html">Map</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <h1>Contact</h1>
+    <p class="lede">Get in touch.</p>
+    <ul class="contact-list">
+      <li><a href="mailto:you@example.com">you@example.com</a></li>
+      <li><a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener">LinkedIn</a></li>
+    </ul>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      &copy; <span id="year"></span> Your Name
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
