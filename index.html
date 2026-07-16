@@ -1,32 +1,22 @@
+---
+title: Home
+nav: home
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home · Eric Li</title>
+  <title>{{ page.title }} · Eric Li</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-
-  <header class="site-header">
-    <div class="site-header-inner">
-      <p class="site-title"><a href="index.html">Eric Li</a></p>
-      <nav class="site-nav" aria-label="Main">
-        <ul>
-          <li><a href="index.html" aria-current="page">Home</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="map.html">Map</a></li>
-          <li><a href="projects.html">Projects</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+{% include header.html %}
 
   <main id="main">
     <h1>Home</h1>
     <p class="lede">Welcome — this is my personal site. More to come soon.</p>
-    <p>Replace this text with a short intro blog yourself or what this site is for.</p>
+    <p>Replace this text with a short intro about yourself or what this site is for.</p>
     <p class="lede">Get in touch.</p>
     <ul class="projects-list">
       <li><a href="mailto:you@example.com">you@example.com</a></li>
@@ -35,14 +25,6 @@
     </ul>
   </main>
 
-  <footer class="site-footer">
-    <div class="site-footer-inner">
-      &copy; <span id="year"></span> Eric Li
-    </div>
-  </footer>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+{% include footer.html %}
 </body>
 </html>

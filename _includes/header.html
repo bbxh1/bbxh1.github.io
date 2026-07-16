@@ -1,0 +1,15 @@
+<a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="site-header-inner">
+      <p class="site-title"><a href="index.html">Eric Li</a></p>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html"{% if page.nav == "home" %} aria-current="page"{% endif %}>Home</a></li>
+          <li><a href="blog.html"{% if page.nav == "blog" %} aria-current="page"{% endif %}>Blog</a></li>
+          <li><a href="map.html"{% if page.nav == "map" %} aria-current="page"{% endif %}>Map</a></li>
+          <li><a href="projects.html"{% if page.nav == "projects" %} aria-current="page"{% endif %}>Projects</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
